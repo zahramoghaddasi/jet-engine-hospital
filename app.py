@@ -16,7 +16,7 @@ st.markdown("### Predictive Maintenance Dashboard for NASA C‑MAPSS Turbofans")
 # ============================================================
 # CONFIGURATION – CHANGE THIS FOR STAGE 2
 # ============================================================
-SUBSET = st.sidebar.selectbox("Select Dataset", ["FD001", "FD002", "FD004"])
+SUBSET = st.sidebar.selectbox("Select Dataset", ["FD001", "FD002"])
 STAGE = SUBSET
 
 st.sidebar.markdown(f"**Current Stage:** {SUBSET}")
