@@ -7,6 +7,13 @@ import pandas as pd
 import numpy as np
 import joblib
 import warnings
+import sys
+try:
+    import sklearn._loss._loss as _loss_mod
+    sys.modules['_loss'] = _loss_mod
+except ImportError:
+    pass
+
 warnings.filterwarnings('ignore')
 
 st.set_page_config(page_title="Jet Engine Hospital", layout="wide")
