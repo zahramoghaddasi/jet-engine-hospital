@@ -1,0 +1,22 @@
+name: jet-engine
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - streamlit=1.40.0
+  - numpy=2.1.0
+  - pandas=2.1.0
+  - scikit-learn=1.5.2
+  - joblib=1.4.2
+  - matplotlib=3.9.2
+  - seaborn=0.13.2
+  - pillow=11.0.0
+  - pip
+  - pip:
+    - anyio
+    - click
+    - gitpython
+    - pydeck
+    - tornado
+    - watchdog
